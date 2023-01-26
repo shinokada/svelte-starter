@@ -24,3 +24,18 @@ API_SECRET=1234
 ```bash
 npm run dev
 ```
+
+## How to use this for GitHub page
+
+There is the `github-page` branch. Please note that it is not gh-pages.
+Checkout to this branch and install packages, build and deploy.
+
+```
+git checkout github-page
+pnpm i
+npm run build
+npm run deploy
+```
+
+This will deploy your GitHub page to `https://<username>.github.io/<repository name>` URL. Don’t forget to change the username and repository name to your personal Github username and repository.
+It may take a couple of minutes. You can check the progress in GitHub Actions tab.
