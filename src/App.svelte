@@ -13,7 +13,9 @@
 </script>
 
 <main class="p-4">
-  <h1 class="text-4xl">Vite + Svelte + Express</h1>
+  <h1 class="text-4xl">
+    Vite + Svelte + TailwindCSS/Flowbite + svelte-spa-router
+  </h1>
   <Router {routes} />
   <Alert dismissable>
     <span slot="icon"
