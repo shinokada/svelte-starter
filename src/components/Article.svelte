@@ -19,7 +19,7 @@
     <p>Published: {format(article.publishDate)}</p>
     <img src={article.image} alt="img" />
     <p>{article.content}</p>
-    <p on:click={pop}>Back</p>
+    <button on:click={pop} on:keydown|preventDefault={pop}>Back</button>
   </div>
 {:else}
   <NotFound />
