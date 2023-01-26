@@ -12,7 +12,7 @@
   onMount(fetchData);
 </script>
 
-<main class="p-4">
+<div class="p-8 overflow-hidden bg-gray-50 dark:bg-gray-900">
   <h1 class="text-4xl">
     Vite + Svelte + TailwindCSS/Flowbite + svelte-spa-router
   </h1>
@@ -47,4 +47,4 @@
       {/each}
     </ul>
   {/if}
-</main>
+</div>

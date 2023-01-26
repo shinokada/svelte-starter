@@ -30,7 +30,6 @@
   img {
     border-radius: 5px;
     max-width: 230px;
-    cursor: pointer;
   }
   @media only screen and (max-width: 600px) {
     .wrapper {
