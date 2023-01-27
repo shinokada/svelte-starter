@@ -7,6 +7,7 @@ specifiers:
   classnames: ^2.3.2
   flowbite: ^1.6.2
   flowbite-svelte: ^0.29.11
+  flowbite-svelte-admin-dashboard: ^0.0.3
   gh-pages: ^5.0.0
   postcss: ^8.4.14
   postcss-load-config: ^4.0.1
@@ -30,6 +31,7 @@ devDependencies:
   classnames: 2.3.2
   flowbite: 1.6.2
   flowbite-svelte: 0.29.11
+  flowbite-svelte-admin-dashboard: 0.0.3
   gh-pages: 5.0.0
   postcss: 8.4.21
   postcss-load-config: 4.0.1_postcss@8.4.21
@@ -600,6 +602,11 @@ packages:
     dependencies:
       locate-path: 5.0.0
       path-exists: 4.0.0
+    dev: true
+
+  /flowbite-svelte-admin-dashboard/0.0.3:
+    resolution: {integrity: sha512-zMURdpk+iaF9CjpMBi5aeNqiREwFE1Pcovw6dWOx0wYBDaPkL5Ey6zjFlx4+KP/V/co1lY+GC0YCyp1Jl8wWFA==}
+    engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     dev: true
 
   /flowbite-svelte/0.29.11:

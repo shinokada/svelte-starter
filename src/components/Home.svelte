@@ -5,7 +5,7 @@
   import { blogs } from "../data.js";
 </script>
 
-<h1 class="text-3xl dark:text-white">All your traveling tips in one place</h1>
+<h1 class="text-3xl dark:text-white">Lorem ipsum dolor sit amet</h1>
 {#each blogs as blog, i}
   <Card
     title={blog.title}
