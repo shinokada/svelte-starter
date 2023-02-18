@@ -5,7 +5,8 @@
   import { blogs } from "../data.js";
 </script>
 
-<h1 class="text-3xl dark:text-white">Lorem ipsum dolor sit amet</h1>
+<h1 class="text-3xl dark:text-white mb-4">Svelte Starter</h1>
+<p class="text-xl dark:text-white">Svelte + Vite + TailwindCSS + Flowbite-Svelte + Svelte-Spa-Router</p>
 {#each blogs as blog, i}
   <Card
     title={blog.title}
