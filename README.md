@@ -30,12 +30,7 @@ npm run dev
 
 ## How to use this for GitHub page
 
-There is the `github-page` branch. Please note that it is not gh-pages.
-Checkout to this branch and install packages, build and deploy.
-
 ```
-git checkout github-page
-pnpm i
 npm run build
 npm run deploy
 ```
