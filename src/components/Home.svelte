@@ -1,5 +1,4 @@
 <script>
-  import { Alert } from "flowbite-svelte";
   import { format } from "timeago.js";
   import Card from "./Card.svelte";
   import { blogs } from "../data.js";
