@@ -1,10 +1,11 @@
 <script>
+  import { Alert } from "flowbite-svelte";
   import { format } from "timeago.js";
   import Card from "./Card.svelte";
   import { blogs } from "../data.js";
 </script>
 
-<h1>All your traveling tips in one place</h1>
+<h1 class="text-3xl dark:text-white">Lorem ipsum dolor sit amet</h1>
 {#each blogs as blog, i}
   <Card
     title={blog.title}
@@ -13,3 +14,4 @@
     publishDate={format(blog.publishDate)}
   />
 {/each}
+

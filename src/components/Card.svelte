@@ -4,40 +4,18 @@
   export let title, description, image, publishDate;
 </script>
 
-<div class="wrapper">
-  <img src={image} alt="img" />
+<div class="flex py-8 px-4">
+  <img src={image} alt="img" class="rounded-md max-w-xs mr-4" />
 
   <div>
-    <h2 class="title">
+    <h2 class="mb-2 text-2xl font-medium dark:text-white">
       <a href={`/article/${urlSlug(title)}`} use:link>{title}</a>
     </h2>
-    <p class="description">{description.substring(0, 180)}...</p>
-    <p>Published: {publishDate}</p>
+    <p class="my-2 text-lg dark:text-white">
+      {description.substring(0, 180)}...
+    </p>
+    {#if publishDate}
+      <p class="text-lg dark:text-white">Published: {publishDate}</p>
+    {/if}
   </div>
 </div>
-
-<style>
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 20px;
-    padding: 20px 0;
-  }
-  .title,
-  .description {
-    margin: 0 0 10px 0;
-  }
-  img {
-    border-radius: 5px;
-    max-width: 230px;
-    cursor: pointer;
-  }
-  @media only screen and (max-width: 600px) {
-    .wrapper {
-      grid-template-columns: 1fr;
-    }
-    img {
-      max-width: 100%;
-    }
-  }
-</style>

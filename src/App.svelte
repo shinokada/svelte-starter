@@ -2,21 +2,21 @@
   import Router, { link } from "svelte-spa-router";
   import { routes } from "./routes.js";
   import { onMount } from "svelte";
-  import { Alert } from "flowbite-svelte";
+  import { DarkMode } from "flowbite-svelte";
   let data;
-  async function fetchData() {
-    const response = await fetch(import.meta.env.VITE_API_ENDPOINT);
-    data = await response.json();
+  if (import.meta.env.VITE_API_ENDPOINT) {
+    async function fetchData() {
+      const response = await fetch(import.meta.env.VITE_API_ENDPOINT);
+      data = await response.json();
+    }
+    onMount(fetchData);
   }
-
-  onMount(fetchData);
 </script>
 
-<main class="p-4">
-  <h1 class="text-4xl">
-    Vite + Svelte + TailwindCSS/Flowbite + svelte-spa-router
-  </h1>
+<DarkMode />
+<div class="p-8 overflow-hidden bg-gray-50 dark:bg-gray-900">
   <Router {routes} />
+
   {#if data}
     <p>Data:</p>
     <ul>
@@ -25,4 +25,4 @@
       {/each}
     </ul>
   {/if}
-</main>
+</div>
