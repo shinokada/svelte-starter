@@ -13,6 +13,13 @@ cd my-app
 pnpm i
 ```
 
+Update dependencites:
+
+```sh
+pnpm update
+pnpm i flowbite-svelte@latest flowbite@latest
+```
+
 ## Backend API env value
 
 Update your backend API value in `.env`:
